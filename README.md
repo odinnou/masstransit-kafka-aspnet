@@ -9,7 +9,7 @@ The first step is :
 
 After the kafka is up, start masstransit-poc.sln with VS 2019 and try to debug the API.
 
-**1. IIS Express (or Console App mode "API")**
+**1. IIS Express (or Console App mode "API")** (on Windows 10)
 
 With "IIS Express" (or console app) startup mode : everything is ok !
 Even if the host is invalid or the topic is not yet created, the API stay up and several logs are written.
@@ -18,7 +18,7 @@ And when I setup my topic, I can handle the message in my consumer : it's perfec
 
 **But**, I don't want to use : "IIS Express" (or console app) debug mode, I want to use **Docker** and more precisely : Docker Compose integration
 
-**2. Docker**
+**2. Docker** (image : mcr.microsoft.com/dotnet/aspnet:5.0)
 
 I just switch from "IIS Express" or "API" to "Docker", then I press play
 
