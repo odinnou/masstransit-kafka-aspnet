@@ -7,7 +7,7 @@ The first step is :
     docker-compose up in the root directory
 
 
-After the kafka is up, start VS 2019 and try to debug the API.
+After the kafka is up, start masstransit-poc.sln with VS 2019 and try to debug the API.
 
 **1. IIS Express (or Console App mode "API")**
 
