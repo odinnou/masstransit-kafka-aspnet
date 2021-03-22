@@ -18,7 +18,7 @@ And when I setup my topic, I can handle the message in my consumer : it's perfec
 
 **But**, I don't want to use : "IIS Express" (or console app) debug mode, I want to use **Docker** and more precisely : Docker Compose integration
 
-**2. Docker** (image : mcr.microsoft.com/dotnet/aspnet:5.0)
+**2. Docker** (image : mcr.microsoft.com/dotnet/core/aspnet:3.1.9-alpine3.12)
 
 I just switch from "IIS Express" or "API" to "Docker", then I press play
 
@@ -28,7 +28,9 @@ The API start and few seconds after I got the error specify in my issue :
 
 without any other explanation :(
 
-> Note :  if you comment the line
+> Note 1 :  if you comment the line
 > "services.AddMassTransitHostedService();" the API will start and it
 > doesn't stop, but it does nothing of course.
+
+> Note 2 :  I try to switch from InMemory Bus to RabbitMQ Bus, and ... same issue on Docker (and continue to work in console app mode)
 
