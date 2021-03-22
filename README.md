@@ -2,9 +2,9 @@
 
 ## I just create a repository to share my issue
 
-The first step is : 
+The first step is : in the root directory, execute this statement 
 
-    docker-compose up in the root directory
+    docker-compose up
 
 
 After the kafka is up, start masstransit-poc.sln with VS 2019 and try to debug the API.
