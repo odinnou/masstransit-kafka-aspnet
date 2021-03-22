@@ -32,5 +32,5 @@ without any other explanation :(
 > "services.AddMassTransitHostedService();" the API will start and it
 > doesn't stop, but it does nothing of course.
 
-> Note 2 :  I try to switch from InMemory Bus to RabbitMQ Bus, and ... same issue on Docker (and continue to work in console app mode)
+> Note 2 :  I tried to switch from InMemory Bus to RabbitMQ Bus, and ... same issue on Docker (and continue to work in console app mode)
 
