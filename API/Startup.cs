@@ -26,7 +26,12 @@ namespace API
 
                     rider.UsingKafka((context, k) =>
                     {
-                        k.Host("localhost: 9092");
+                        // console app
+                        //k.Host("localhost:9092");
+
+                        // docker
+                        k.Host("broker:9092");
+                        //k.Host("host.docker.internal:9092");
 
                         k.TopicEndpoint<ITrackingUpdateCommand>("test", "test", e =>
                         {

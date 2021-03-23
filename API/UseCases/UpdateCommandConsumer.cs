@@ -1,5 +1,6 @@
 ﻿using API.Models.Kafka;
 using MassTransit;
+using System;
 using System.Threading.Tasks;
 
 namespace API.UseCases
@@ -8,6 +9,7 @@ namespace API.UseCases
     {
         public Task Consume(ConsumeContext<ITrackingUpdateCommand> context)
         {
+            Console.WriteLine(context.Message.Text);
             return Task.CompletedTask;
         }
     }
